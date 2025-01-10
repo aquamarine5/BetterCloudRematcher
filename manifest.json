@@ -24,7 +24,22 @@
                 {
                     "type": "replace",
                     "from": "Ct.Lw(40012).menu=!1,",
-                    "to": "Ct.Lw(40012).menu = !1,Ct.Lw(44666).menu = i.privilege.commentPriv==0,"
+                    "to": "Ct.Lw(40012).menu=!1,Ct.Lw(44666).menu=i.privilege.commentPriv==0,"
+                },
+                {
+                    "type": "replace",
+                    "from": "case 40090:",
+                    "to": "case 44666:return void window.rematcher_choice(e);case 40090:"
+                },
+                {
+                    "type": "replace",
+                    "from": "check:function(t,e){var i=this.r0t",
+                    "to": "check:function(t,e){window.rematcher_cloudsearch(t.name).then((result)=>{Ct.Lw(44666).children=window.rematcher_combinecolumn(result);var i=this.r0t"
+                },
+                {
+                    "type": "replace",
+                    "from": "At.fid&&!a&&c)",
+                    "to": "At.fid&&!a&&c)})"
                 }
             ]
         }
