@@ -1,0 +1,32 @@
+{
+    "manifest_version": 1,
+    "name": "BetterCloudRematcher",
+    "version": "0.0.1",
+    "author": "aquamarine5",
+    "description": "",
+    "betterncm_version": ">=0.2.5",
+    "preview": "preview.png",
+    "injects": {
+        "Main": [
+            {
+                "file": "./dist/main.js"
+            }
+        ]
+    },
+    "hijacks": {
+        "> 2.10.0": {
+            "orpheus://orpheus/pub/core.": [
+                {
+                    "type": "replace",
+                    "from": ",Ct.R({menu_id:40004",
+                    "to": ",Ct.R({menu_id:44666,text:\"Rematcher\",image_path:Nt.Zp(\"icn_cloud\")}),Ct.R({separator:!0,enable:!1}),Ct.R({menu_id:40004"
+                },
+                {
+                    "type": "replace",
+                    "from": "Ct.Lw(40012).menu=!1,",
+                    "to": "Ct.Lw(40012).menu = !1,Ct.Lw(44666).menu = i.privilege.commentPriv==0,"
+                }
+            ]
+        }
+    }
+}
