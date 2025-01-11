@@ -26,8 +26,8 @@ plugin.onLoad(() => {
                 type: "json",
                 query: {
                     userId: localCache.Du("host.profile.userId"),
-                    songId: 2629531019,
-                    adjustSongId: 65536
+                    songId: songId,
+                    adjustSongId: adjustedSongId
                 },
                 onload: onloadCallback,
                 onerror: onerrorCallback
@@ -70,7 +70,7 @@ plugin.onLoad(() => {
                 i = "default" == o.type && "default" == o.name,
                 mac = getMaterialColorIfPresent();
             if (mac) {
-                return `#ff${mac}`
+                return `#${mac}`
             } else {
                 return i ? "#ffd6d6dc" : "#ff474747"
             }

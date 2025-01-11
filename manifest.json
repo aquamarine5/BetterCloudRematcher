@@ -33,13 +33,8 @@
                 },
                 {
                     "type": "replace",
-                    "from": "check:function(t,e){var i=this.r0t",
-                    "to": "check:function(t,e){window.rematcher_cloudsearch(t.name).then((result)=>{Ct.Lw(44666).children=window.rematcher_combinecolumn(result);var i=this.r0t"
-                },
-                {
-                    "type": "replace",
                     "from": "At.fid&&!a&&c)",
-                    "to": "At.fid&&!a&&c)})"
+                    "to": "At.fid&&!a&&c),window.rematcher_cloudsearch(t.name).then((result)=>{Ct.Lw(44666).children=window.rematcher_combinecolumn(result);})"
                 }
             ]
         }
