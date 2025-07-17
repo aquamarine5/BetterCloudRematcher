@@ -28,8 +28,8 @@
                 },
                 {
                     "type": "replace",
-                    "from": "case 40090:",
-                    "to": "case 44666:return void window.rematcher_choice(e);case 40090:"
+                    "from": "t.C0t=function(a){",
+                    "to": "t.C0t=function(a){if(a.id.startsWith(\"rematcher-\")){window.rematcher_rematch(parseInt(a.id.slice(10)),St.id)}"
                 },
                 {
                     "type": "replace",
