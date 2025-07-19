@@ -29,7 +29,7 @@
                 {
                     "type": "replace",
                     "from": "t.C0t=function(a){",
-                    "to": "t.C0t=function(a){if(a.id.startsWith(\"rematcher-\")){window.rematcher_rematch(parseInt(a.id.slice(10)),St.id)}"
+                    "to": "t.C0t=function(a){if(a.id.startsWith && a.id.startsWith(\"rematcher-\")){window.rematcher_rematch(parseInt(a.id.slice(10)),St.id)}"
                 },
                 {
                     "type": "replace",
